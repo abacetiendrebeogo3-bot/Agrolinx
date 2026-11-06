@@ -1,22 +1,23 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" style="background:#FFFFFF">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Agrolinx</title>
+<meta name="color-scheme" content="only light">
 <meta name="description" content="Agrolinx, Ouagadougou : production agropastorale et vente de matériel agricole et piscicole.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
 /* Layout : site vitrine sobre. Bandes pleine largeur vert / blanc cassé, photos réelles en grand, catalogue en grille, contact en fin. Identité Agrolinx unique (un seul thème, couleurs fixées). */
 :root{
-  --vert:#123B21; --vert-2:#1B4D2B; --vert-nuit:#0D2B18;
+  --vert:#0B6B2E; --vert-2:#0E7F37; --vert-nuit:#000000;
   --or:#E8A935; --or-fonce:#8A5E0C;
-  --fond:#F6F4EE; --papier:#FFFFFF; --encre:#17201A; --texte:#46524A; --trait:#DDD8CB;
-  --sur-vert:#D3E1D6;
+  --fond:#FFFFFF; --papier:#FFFFFF; --encre:#000000; --texte:#333333; --trait:#E2E2E2;
+  --sur-vert:#FFFFFF;
   --wa:#1A9E50;
   --titre:"Montserrat", "Arial", sans-serif;
   --corps:"Source Sans 3", "Segoe UI", Arial, sans-serif;
-  color-scheme: light;
+  color-scheme: only light;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -56,7 +57,7 @@ a{color:inherit}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
 .hero-photo{position:relative;align-self:stretch;min-height:420px;border-radius:14px 14px 0 0;overflow:hidden;background:#E9E9EC}
 .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.legende{position:absolute;left:16px;bottom:16px;background:rgba(13,43,24,.88);color:#FFFFFF;font-size:14px;padding:8px 12px;border-radius:6px}
+.legende{position:absolute;left:16px;bottom:16px;background:rgba(0,0,0,.85);color:#FFFFFF;font-size:14px;padding:8px 12px;border-radius:6px}
 .hero-texte > *{animation:monte .6s ease-out both}
 .hero-texte > *:nth-child(2){animation-delay:.06s}
 .hero-texte > *:nth-child(3){animation-delay:.12s}
@@ -84,7 +85,7 @@ a{color:inherit}
 .activite h3{font-size:22px;font-weight:800;color:var(--vert);margin-bottom:8px}
 .activite p{color:var(--texte);grid-column:2}
 .puces{grid-column:2;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding:0;list-style:none}
-.puces li{font-size:15px;font-weight:600;color:var(--vert-2);background:#EAF0EA;border-radius:999px;padding:4px 12px}
+.puces li{font-size:15px;font-weight:600;color:var(--vert);background:#E8F5EC;border-radius:999px;padding:4px 12px}
 
 /* Matériel */
 .materiel{background:var(--papier);border-block:1px solid var(--trait)}
@@ -123,7 +124,7 @@ a{color:inherit}
 .profils .surtitre{color:var(--or)}
 .choix{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .choix a{display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:150px;padding:22px;border-radius:10px;background:var(--vert-2);text-decoration:none;border:1px solid rgba(255,255,255,.1);transition:background .2s ease,border-color .2s ease}
-.choix a:hover{background:#215C34;border-color:var(--or)}
+.choix a:hover{background:#000000;border-color:var(--or)}
 .choix strong{font-family:var(--titre);font-size:19px;font-weight:800}
 .choix span{font-size:15px;color:var(--sur-vert)}
 .choix em{font-style:normal;font-family:var(--titre);font-size:14px;font-weight:700;color:var(--or);display:flex;align-items:center;gap:6px}
